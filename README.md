@@ -89,8 +89,11 @@
 <h3>Сегменты</h3>
 
 1. Получение сегментов
+
    GET http://localhost:8000/segments
+   
    Response
+
    Status code 200
    ```
    [
@@ -102,8 +105,11 @@
    ```
 
 2. Получение сегмента по id
+
    GET http://localhost:8000/segments/1
+
    Response
+
    Status code 200
    ```
    {
@@ -113,6 +119,7 @@
    ```
 
 3. Создание сегмента
+
    POST http://localhost:8000/users
 
    Request
@@ -124,6 +131,7 @@
    ```
 
    Response
+
    Status code 204
    ```
    {
@@ -134,6 +142,7 @@
    ```
 
 4. Редактирование сегмента по id
+
    PUT http://localhost:8000/segments/3
 
    Request
@@ -150,6 +159,7 @@
 
 
 5. Удаление сегмента по id
+
    DELETE http://localhost:8000/segments/3
 
    Response
@@ -159,6 +169,7 @@
 
 <h3>Пользователи + сегменты</h3>
 1. Добавление пользователя в сегмент
+
    POST http://localhost:8000/users/1/segments
 
    Request
@@ -171,6 +182,7 @@
    ```
 
    Response
+
    200 OK
    ```
    "Segment added"
@@ -182,9 +194,11 @@
    ```
 
 2. Получение активных сегментов пользователя
+
    POST http://localhost:8000/users/1/segments
 
    Response
+
    200 OK
    ```
    [
@@ -196,9 +210,11 @@
    ```
 
 3. Удаление пользователя из сегментов
+
    DELETE http://localhost:8000/users/1/segments
 
    Response
+
    200 OK
    ```
    "Segment deleted"
