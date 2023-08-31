@@ -11,7 +11,9 @@
 1. Получение пользователей
 
    GET http://localhost:8000/users
+
    Response
+
    Status code 200
    ```
    [
@@ -26,7 +28,9 @@
 2. Получение пользователя по id
 
     GET http://localhost:8000/users/1  
+
     Response
+
     Status code 200
    ```
    {
